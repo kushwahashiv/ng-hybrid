@@ -1,0 +1,17 @@
+<section>
+  <ul>
+    <li ng-repeat="user in $ctrl.users" ui-sref-active="userselected">
+      <a ui-sref="list.detail({ id: user.id })"
+         ng-disabled="!user.active"
+         ng-class="{ deactivated: !user.active }">
+        {{ user.name }}
+      </a>
+      <button ng-click="user.active = !user.active">
+        {{ user.active ? "Deactivate" : "Activate" }}
+      </button>
+    </li>
+  </ul>
+  <div ui-view></div>
+
+</section>
+<footer><strong>Note:</strong> Angular 1 component</footer>

@@ -83,3 +83,10 @@ import 'zone.js/dist/zone';  // Included with Angular CLI.
 /***************************************************************************************************
  * APPLICATION IMPORTS
  */
+import 'angular';
+import 'angular-animate';
+import 'angular-cookies';
+import 'angular-resource';
+import 'angular-sanitize';
+// import '@uirouter/angularjs';
+// import '@uirouter/angular-hybrid';

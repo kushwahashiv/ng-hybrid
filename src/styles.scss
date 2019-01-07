@@ -1,1 +1,26 @@
-/* You can add global styles to this file, and also import other style files */
+a.deactivated {
+  color: lightgrey;
+}
+li.userselected {
+  font-weight: bolder;
+}
+
+.menu {
+  margin: 5px;
+  text-transform: uppercase;
+  color: white;
+  text-decoration: none;
+  cursor:pointer;
+  &:hover {
+    color: aqua;
+  }
+}
+
+.header{
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  height: 50px;
+  background-color: black;
+}
